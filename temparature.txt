@@ -1,0 +1,21 @@
+class Temperature():
+    def __init__(self):
+        self.celsius = 0
+        self.fahrenheit = 32
+
+    def convertFahrenhiet(self, celsius):
+        print((celsius * (9 / 5)) + 32)
+
+    def convertCelsius(self, fahrenhiet):
+        print((fahrenhiet - 32) * (5 / 9))
+
+
+t1 = Temperature()
+t1.convertFahrenhiet(100)
+t1.convertCelsius(212)
+
+
+output
+
+212.0
+100.0

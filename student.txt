@@ -1,0 +1,36 @@
+class Student:
+    age = 15
+    marks = 50
+    def __init__(self, name, rno):
+        self.name = name
+        self.rno = rno
+
+    def display(self):
+        print('Name: {}, RollNo: {} '. \
+              format(self.name, self.rno), end=' ')
+        print('Age:', self.age)
+        print('Marks:', self.marks)
+
+    def setAge(self, age):
+        self.age = age
+
+    def setMarks(self, marks):
+        self.marks = marks
+
+
+s1 = Student('pqr', 1)
+s1.setAge(22)
+
+s1.display()
+
+s2 = Student('jkl', 2)
+s2.setMarks(80)
+
+s2.display()
+
+output
+
+Name: pqr, RollNo: 1  Age: 22
+Marks: 50
+Name: jkl, RollNo: 2  Age: 15
+Marks: 80

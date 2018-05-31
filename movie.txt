@@ -1,0 +1,31 @@
+lass MovieDetails:
+    def __init__(self, mName, artist, yof, ratings):
+        self.mName = mName
+        self.artist = artist
+        self.yof = yof
+        self.ratings = ratings
+
+    def display(self):
+        print(' Movie Name: {}, Artist Name: {}, Year of Release: {}, Ratings:{}'.format(self.mName, self.artist,
+                                                                                         self.yof, self.ratings))
+
+    def setearning(self, earn):
+        self.earning = earn
+        print(' Movie Name: {}, Artist Name: {}, Year of Release: {}, Ratings:{}' \
+              .format(self.mName, self.artist, self.yof, self.ratings), end=" ")
+        print("Earning of movie is {}".format(self.earning))
+
+
+s1 = MovieDetails('Queen', 'Kangana', 2014, 5)
+
+s1.display()
+
+s2 = MovieDetails('Titanic', 'Kate Winslet', 1997, 5)
+
+s2.setearning(300000)
+
+output
+
+ Movie Name: Queen, Artist Name: Kangana, Year of Release: 2014, Ratings:5
+ Movie Name: Titanic, Artist Name: Kate Winslet, Year of Release: 1997, Ratings:5 Earning of movie is 300000
+
